@@ -15,10 +15,10 @@ const Homes = () => {
 
     const houseOne = {
         gallery: [
-          "src/assets/guarene/IMGP4610.JPG",
-          "src/assets/guarene/IMGP5106.JPG",
-          "src/assets/guarene/IMGP5095.JPG",
-          "src/assets/guarene/IMGP5056.JPG",
+          "guarene/IMGP4610.JPG",
+          "guarene/IMGP5106.JPG",
+          "guarene/IMGP5095.JPG",
+          "guarene/IMGP5056.JPG",
         ],
         map: "https://maps.app.goo.gl/HnsA2K1rzCXQ5nLc7",
         title: "Casa di Guarene",
@@ -44,10 +44,10 @@ const Homes = () => {
     
       const houseTwo = {
         gallery: [
-          "src/assets/guarene/IMGP5146.JPG",
-          "src/assets/guarene/IMGP5105.JPG",
-          "src/assets/guarene/IMGP5095.JPG",
-          "src/assets/guarene/IMGP5042.JPG",
+          "guarene/IMGP5146.JPG",
+          "guarene/IMGP5105.JPG",
+          "guarene/IMGP5095.JPG",
+          "guarene/IMGP5042.JPG",
         ],
         map: "https://maps.app.goo.gl/HnsA2K1rzCXQ5nLc7",
         title: "Black Modern House",

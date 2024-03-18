@@ -26,7 +26,7 @@ const Footer = () => {
         <div className={styles.footer_top}>
           <div className={styles.top_logo}>
             <img
-              src="src/assets/CH_logo.svg"
+              src="/CH_logo.svg"
               alt="cerrato houses logo"
               className={styles.logo_img}
             />

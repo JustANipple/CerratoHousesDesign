@@ -30,7 +30,7 @@ const NavBar = () => {
   return (
     <div className={`${styles.navBar} ${menu ? styles.navBar_modal_open : ""}`}>
       <img
-        src="./src/assets/CH_logo.svg"
+        src="/CH_logo.svg"
         alt="Cerrato logo"
         className={styles.navBar_logo}
       />
@@ -46,7 +46,7 @@ const NavBar = () => {
       >
         <div className={styles.content_header}>
           <img
-            src="./src/assets/CH_logo.svg"
+            src="/CH_logo.svg"
             alt="Cerrato logo"
             className={styles.header_logo}
           />
