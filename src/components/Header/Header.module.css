@@ -1,0 +1,7 @@
+.header {
+    padding: 1rem;
+    height: 100vh;
+    background-image: url("./src/assets/Header_bg_mobile.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

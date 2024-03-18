@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.navBar_logo {
+  max-height: 3rem;
+  filter: invert(66%) sepia(91%) saturate(798%) hue-rotate(161deg)
+    brightness(93%) contrast(90%);
+}
+
+.navBar_button_hamburger,
+.navBar_button_mark {
+  cursor: pointer;
+  border: unset;
+  background-color: #1f1f1f;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  color: #43bce2;
+  height: fit-content;
+  position: relative;
+  z-index: 1;
+}
+
+.navMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  background-color: #1f1f1f;
+  width: fit-content;
+  padding: 2rem 1.5rem;
+  z-index: 1;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.navMenu_open {
+  transform: translateX(0);
+}
+
+.navBar_modal_open::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navMenu_list {
+  list-style: none;
+  display: grid;
+  row-gap: 1.5rem;
+  padding: 0;
+}
+
+.list_item {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.125s ease-in-out;
+  transform-origin: left;
+  color: white;
+}
+
+.content_header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header_logo {
+  max-width: 3rem;
+  filter: invert(66%) sepia(91%) saturate(798%) hue-rotate(161deg)
+    brightness(93%) contrast(90%);
+}
+
+.header_title {
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-top: 0.875rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #43bce2;
+}
+
+.content_divisor {
+  display: flex;
+  margin-block: 4rem;
+  border: unset;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.content_button {
+  border: 1px solid black;
+  background-color: #c89a5b;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 300;
+}
