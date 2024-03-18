@@ -13,6 +13,9 @@ const Housing = ({ house }) => {
 
   function handleClick() {
     setModal(!modal);
+    setTimeout(() => {
+      window.dispatchEvent(new Event("resize"));
+    });
   }
 
   return (
@@ -151,7 +154,7 @@ const Modal = ({ house, modal, setModal }) => {
           </span>
         </p>
         <MapContainer
-          style={{ height: "180px", borderRadius: "1rem" }}
+          style={{ height: "180px", width: "100%", borderRadius: "1rem" }}
           center={[house.coordinates.x, house.coordinates.y]}
           zoom={16}
           scrollWheelZoom={false}

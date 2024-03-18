@@ -120,4 +120,5 @@
     background-color: transparent;
     border: unset;
     font-size: 1.5rem;
+    width: fit-content;
 }

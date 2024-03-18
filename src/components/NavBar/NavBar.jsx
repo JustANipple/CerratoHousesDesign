@@ -35,7 +35,9 @@ const NavBar = () => {
         className={styles.navBar_logo}
       />
       <button
-        className={styles.navBar_button_hamburger}
+        className={`${styles.navBar_button_hamburger} ${
+          menu ? styles.navBar_button_close : ""
+        }`}
         onClick={handleButtonClick}
       >
         {menu ? <IoClose /> : <GiHamburgerMenu />}

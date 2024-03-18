@@ -3,6 +3,7 @@
 .navBar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -13,7 +14,8 @@
 }
 
 .navBar_button_hamburger,
-.navBar_button_mark {
+.navBar_button_mark,
+.navBar_button_close {
   cursor: pointer;
   border: unset;
   background-color: #1f1f1f;
@@ -23,7 +25,13 @@
   color: #43bce2;
   height: fit-content;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  transition: all .5s ease-in-out;
+}
+
+.navBar_button_close {
+  color: #1f1f1f;
+  background-color: #43bce2;
 }
 
 .navMenu {
@@ -36,8 +44,7 @@
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
   background-color: #1f1f1f;
-  width: fit-content;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 2rem;
   z-index: 1;
   transform: translateX(-100%);
   transition: transform 0.25s ease-in-out;
@@ -96,7 +103,7 @@
 
 .content_divisor {
   display: flex;
-  margin-block: 4rem;
+  margin-block: 3rem;
   border: unset;
   border-top: 1px solid rgba(128, 128, 128, 0.5);
 }
