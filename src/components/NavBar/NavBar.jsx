@@ -34,14 +34,15 @@ const NavBar = () => {
         alt="Cerrato logo"
         className={styles.navBar_logo}
       />
-      <button
+      <a
+        href="#"
         className={`${styles.navBar_button_hamburger} ${
           menu ? styles.navBar_button_close : ""
         }`}
         onClick={handleButtonClick}
       >
         {menu ? <IoClose /> : <GiHamburgerMenu />}
-      </button>
+      </a>
       <div
         className={`${styles.navMenu} ${menu ? styles.navMenu_open : ""}`}
         onClick={handleButtonClick}
