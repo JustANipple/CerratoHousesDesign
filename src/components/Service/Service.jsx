@@ -1,9 +1,7 @@
 import styles from "./Service.module.css";
 import { IoWalletOutline } from "react-icons/io5";
-import { FaArrowRightLong } from "react-icons/fa6";
 import { BiCoinStack } from "react-icons/bi";
 import { LuFileSignature } from "react-icons/lu";
-import { CgArrowLongRight } from "react-icons/cg";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import PropTypes from "prop-types";
 
@@ -34,7 +32,7 @@ const Service = () => {
       <div className={styles.service_title}>Discover How We Can Help You</div>
       <div className={styles.utilities}>
         {utilities.map( (utility, index) => {
-          return <Utility utility={utility} index={index}/>
+          return <Utility utility={utility} key={index}/>
         })}
       </div>
     </div>
